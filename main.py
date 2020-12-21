@@ -49,4 +49,4 @@ def farm_gear(loop_count):
 
 
 start_game()
-farm_gear()
+farm_gear(4)
