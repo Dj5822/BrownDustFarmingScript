@@ -12,7 +12,7 @@ def start_game():
     pyautogui.click(pyautogui.center(pyautogui.locateOnScreen("images/maximize.png")))
     time.sleep(15)
     pyautogui.click(pyautogui.center(pyautogui.locateOnScreen("images/brownDust.png")))
-    time.sleep(25)
+    time.sleep(80)
 
 
 # Collect daily rewards after login.
@@ -43,7 +43,7 @@ def farm_gear(loop_count):
         pyautogui.click(random.randint(1342, 1661), random.randint(936, 981))
         time.sleep(50 + random.randint(0, 1000) / 150)
         pyautogui.click(random.randint(1456, 1637), random.randint(927, 964))
-        time.sleep(6 + random.randint(0, 1000) / 1000)
+        time.sleep(7 + random.randint(0, 1000) / 1000)
     pyautogui.click(random.randint(1493, 1594), random.randint(179, 192))
     # repeat gear collect
     for gear_loop_var2 in range(loop_count):
@@ -56,7 +56,7 @@ def farm_gear(loop_count):
     # exit to menu
     time.sleep(3 + random.randint(0, 1000) / 1000)
     pyautogui.click(random.randint(172, 203), random.randint(70, 100))
-    time.sleep(10 + random.randint(0, 1000) / 1000)
+    time.sleep(15 + random.randint(0, 1000) / 1000)
 
 
 def recruit():
@@ -104,7 +104,7 @@ def recruit():
     time.sleep(3 + random.randint(0, 1000) / 1000)
     # exit
     pyautogui.click(169, 88)
-    time.sleep(10 + random.randint(0, 1000) / 1000)
+    time.sleep(15 + random.randint(0, 1000) / 1000)
 
 
 def send_gift():
@@ -138,7 +138,7 @@ def guild():
     pyautogui.click(165, 79)
     time.sleep(6 + random.randint(0, 1000) / 1000)
     pyautogui.click(165, 79)
-    time.sleep(10 + random.randint(0, 1000) / 1000)
+    time.sleep(15 + random.randint(0, 1000) / 1000)
 
 
 def crystal_dungeon():
@@ -152,7 +152,7 @@ def crystal_dungeon():
     pyautogui.click(909, 886)
     time.sleep(3 + random.randint(0, 1000) / 1000)
     pyautogui.click(1091, 678)
-    time.sleep(10 + random.randint(0, 1000) / 1000)
+    time.sleep(15 + random.randint(0, 1000) / 1000)
 
 
 def world_boss(count):
@@ -178,7 +178,7 @@ def world_boss(count):
         pyautogui.click(1553, 943)
         time.sleep(3 + random.randint(0, 1000) / 1000)
     pyautogui.click(173, 79)
-    time.sleep(10 + random.randint(0, 1000) / 1000)
+    time.sleep(15 + random.randint(0, 1000) / 1000)
 
 
 def collect_rewards():
@@ -240,7 +240,7 @@ def collect_rewards():
         pyautogui.click(1639, 935)
         time.sleep(3 + random.randint(0, 1000) / 1000)
     pyautogui.click(175, 87)
-    time.sleep(10 + random.randint(0, 1000) / 1000)
+    time.sleep(12 + random.randint(0, 1000) / 1000)
     pyautogui.click(476, 937)
     time.sleep(3 + random.randint(0, 1000) / 1000)
     for i in range(8):
