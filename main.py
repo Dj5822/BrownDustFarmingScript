@@ -12,16 +12,15 @@ def start_game():
     pyautogui.click(pyautogui.center(pyautogui.locateOnScreen("images/maximize.png")))
     time.sleep(15)
     pyautogui.click(pyautogui.center(pyautogui.locateOnScreen("images/brownDust.png")))
-    time.sleep(80)
+    time.sleep(90)
 
 
 # Collect daily rewards after login.
 def collect_daily():
-    pyautogui.click(random.randint(1543, 1746), random.randint(917, 945))
-    time.sleep(3 + random.randint(0, 1000) / 1000)
-    pyautogui.click(random.randint(1552, 1563), random.randint(145, 157))
-    time.sleep(3 + random.randint(0, 1000) / 1000)
-    pyautogui.click(random.randint(1499, 1514), random.randint(972, 991))
+    for i in range(5):
+        pyautogui.click(1625, 701)
+        time.sleep(1 + random.randint(0, 1000) / 1000)
+    pyautogui.click(1500, 976)
     time.sleep(3 + random.randint(0, 1000) / 1000)
 
 
@@ -39,7 +38,7 @@ def farm_gear(loop_count):
         pyautogui.click(random.randint(699, 1167), random.randint(887, 939))
         time.sleep(3 + random.randint(0, 1000) / 1000)
         pyautogui.click(random.randint(986, 1310), random.randint(869, 905))
-        time.sleep(6 + random.randint(0, 1000) / 1000)
+        time.sleep(8 + random.randint(0, 1000) / 1000)
         pyautogui.click(random.randint(1342, 1661), random.randint(936, 981))
         time.sleep(50 + random.randint(0, 1000) / 150)
         pyautogui.click(random.randint(1456, 1637), random.randint(927, 964))
@@ -250,11 +249,10 @@ def collect_rewards():
 
 time.sleep(3)
 start_game()
-collect_daily()
-crystal_dungeon()
-recruit()
-send_gift()
-guild()
-farm_gear(4)
-world_boss(2)
-collect_rewards()
+#collect_daily()
+#crystal_dungeon()
+#recruit()
+#send_gift()
+#guild()
+#farm_gear(4)
+#collect_rewards()
