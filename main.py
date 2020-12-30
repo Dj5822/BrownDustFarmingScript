@@ -91,6 +91,8 @@ def recruit():
     # normal pull
     pyautogui.click(824, 916)
     time.sleep(3 + random.randint(0, 1000) / 1000)
+    pyautogui.click(1465, 428)
+    time.sleep(3 + random.randint(0, 1000) / 1000)
     pyautogui.click(1666, 845)
     time.sleep(3 + random.randint(0, 1000) / 1000)
     pyautogui.click(1087, 679)
@@ -249,10 +251,10 @@ def collect_rewards():
 
 time.sleep(3)
 start_game()
-#collect_daily()
-#crystal_dungeon()
-#recruit()
-#send_gift()
-#guild()
-#farm_gear(4)
-#collect_rewards()
+collect_daily()
+crystal_dungeon()
+farm_gear(4)
+recruit()
+send_gift()
+guild()
+
